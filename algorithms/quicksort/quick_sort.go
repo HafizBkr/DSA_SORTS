@@ -1,8 +1,6 @@
-package main
+package algorithms
 
-import "fmt"
-
-func quickSort(arr []int) {
+func QuickSort(arr []int) {
     if len(arr) < 2 {
         return
     }
@@ -15,16 +13,9 @@ func quickSort(arr []int) {
             right = append(right, v)
         }
     }
-    quickSort(left)
-    quickSort(right)
+    QuickSort(left)
+    QuickSort(right)
     copy(arr, left)
     arr[len(left)] = pivot
     copy(arr[len(left)+1:], right)
-}
-
-func main() {
-    arr := []int{64, 25, 12, 22, 11}
-    fmt.Println("Array before sorting:", arr)
-    quickSort(arr)
-    fmt.Println("Array after sorting:", arr)
 }

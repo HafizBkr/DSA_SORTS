@@ -1,8 +1,6 @@
-package main
+package algorithms
 
-import "fmt"
-
-func mergeSort(arr []int) {
+func MergeSort(arr []int) {
     if len(arr) > 1 {
         mid := len(arr) / 2
         left := make([]int, mid)
@@ -11,8 +9,8 @@ func mergeSort(arr []int) {
         copy(left, arr[:mid])
         copy(right, arr[mid:])
 
-        mergeSort(left)
-        mergeSort(right)
+        MergeSort(left)
+        MergeSort(right)
 
         i, j, k := 0, 0, 0
 
@@ -39,11 +37,4 @@ func mergeSort(arr []int) {
             k++
         }
     }
-}
-
-func main() {
-    arr := []int{64, 25, 12, 22, 11}
-    fmt.Println("Array before sorting:", arr)
-    mergeSort(arr)
-    fmt.Println("Array after sorting:", arr)
 }

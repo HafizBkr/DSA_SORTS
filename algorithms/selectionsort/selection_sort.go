@@ -1,8 +1,6 @@
-package main
+package algorithms
 
-import "fmt"
-
-func selectionSort(arr []int) {
+func SelectionSort(arr []int) {
     n := len(arr)
     for i := 0; i < n-1; i++ {
         minIndex := i
@@ -13,11 +11,4 @@ func selectionSort(arr []int) {
         }
         arr[i], arr[minIndex] = arr[minIndex], arr[i]
     }
-}
-
-func main() {
-    arr := []int{64, 25, 12, 22, 11}
-    fmt.Println("Array before sorting:", arr)
-    selectionSort(arr)
-    fmt.Println("Array after sorting:", arr)
 }
