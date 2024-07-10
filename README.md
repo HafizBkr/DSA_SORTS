@@ -1,6 +1,6 @@
-#Sorting Algorithms in Go
+Sorting Algorithms in Go
 
-This repository contains implementations of various sorting algorithms in Go programming language.
+This repository contains implementations of various sorting algorithms in the Go programming language, along with tests to verify their correctness.
 Algorithms Implemented
 1. Insertion Sort
 
@@ -8,21 +8,34 @@ Insertion sort is a simple sorting algorithm that builds the final sorted array 
 
 Implementation:
 
-   File: insertion_sort.go
-    Usage:
+    File: insertsort/insertion_sort.go
 
-    go run insertion_sort.go
+Test File:
+
+    File: insertsort/insert_sort_test.go
+
+Test Usage:
+
+
+    go test ./insertsort -run TestInsertionSort
 
 2. Selection Sort
 
-Selection sort sorts an array by repeatedly finding the minimum element from unsorted part and putting it at the beginning.
+Selection sort sorts an array by repeatedly finding the minimum element from the unsorted part and putting it at the beginning.
 
 Implementation:
 
-  File: selection_sort.go
-    Usage:
+    File: selectionsort/selection_sort.go
 
-    go run selection_sort.go
+Test File:
+
+    File: selectionsort/selection_sort_test.go
+
+Test Usage:
+
+
+
+    go test ./selectionsort -run TestSelectionSort
 
 3. Bubble Sort
 
@@ -30,10 +43,16 @@ Bubble sort repeatedly steps through the list, compares adjacent elements, and s
 
 Implementation:
 
-  File: bubble_sort.go
-    Usage:
+    File: bubblesort/bubble_sort.go
 
-    go run bubble_sort.go
+Test File:
+
+    File: bubblesort/bubble_sort_test.go
+
+Test Usage:
+
+
+    go test ./bubblesort -run TestBubbleSort
 
 4. Merge Sort
 
@@ -41,25 +60,39 @@ Merge sort is a divide and conquer algorithm that divides the input array into t
 
 Implementation:
 
-  File: merge_sort.go
-    Usage:
+    File: mergesort/merge_sort.go
 
-    go run merge_sort.go
+Test File:
+
+    File: mergesort/merge_sort_test.go
+
+Test Usage:
+
+    go test ./mergesort -run TestMergeSort
 
 5. Quick Sort
 
-Quick sort is a divide and conquer algorithm that picks an element as pivot and partitions the array around the pivot.
+Quick sort is a divide and conquer algorithm that picks an element as a pivot and partitions the array around the pivot.
 
 Implementation:
 
-  File: quick_sort.go
-    Usage:
+    File: quicksort/quick_sort.go
 
-    go run quick_sort.go
+Test File:
 
-Running the Examples
+    File: quicksort/quick_sort_test.go
 
-Each sorting algorithm is implemented in a separate Go file. To run an example, navigate to the directory containing the file and use the go run command as shown in each section above.
+Test Usage:
+
+    go test ./quicksort -run TestQuickSort
+
+Running the Tests
+
+Each sorting algorithm is implemented in a separate Go file, and corresponding tests are provided to verify their correctness. To run the tests for all the algorithms, navigate to the root directory of the project and use the following command:
+
+
+go test ./...
+
 Contributing
 
 Contributions and improvements are welcome! If you have any suggestions or find issues, please feel free to open an issue or submit a pull request.
