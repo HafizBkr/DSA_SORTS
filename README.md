@@ -91,7 +91,7 @@ Running the Tests
 Each sorting algorithm is implemented in a separate Go file, and corresponding tests are provided to verify their correctness. To run the tests for all the algorithms, navigate to the root directory of the project and use the following command:
 
 
-go test ./...
+    go test ./...
 
 Contributing
 
