@@ -2,7 +2,7 @@ Sorting Algorithms in Go
 
 This repository contains implementations of various sorting algorithms in the Go programming language, along with tests to verify their correctness.
 Algorithms Implemented
-1. Insertion Sort
+1. Insertion Sort:
 
 Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time.
 
