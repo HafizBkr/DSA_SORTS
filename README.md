@@ -95,4 +95,4 @@ Each sorting algorithm is implemented in a separate Go file, and corresponding t
 
 Contributing
 
-Contributions and improvements are welcome! If you have any suggestions or find issues, please feel free to open an issue or submit a pull request.
+Contributions and improvements are welcome! If you have any suggestions or find issues, please feel free to open an issue or submit a pull request..
