@@ -1,4 +1,4 @@
-Sorting Algorithms in Go
+Sorting Algorithms in Go 
 
 This repository contains implementations of various sorting algorithms in the Go programming language, along with tests to verify their correctness.
 Algorithms Implemented
