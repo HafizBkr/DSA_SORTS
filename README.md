@@ -6,11 +6,11 @@ Algorithms Implemented
 
 Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time.
 
-Implementation:
+Implementation :
 
     File: insertsort/insertion_sort.go
 
-Test File: 
+Test File : 
 
     File: insertsort/insert_sort_test.go
 
